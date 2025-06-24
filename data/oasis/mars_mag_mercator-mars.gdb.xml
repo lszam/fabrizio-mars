@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmd:MD_Metadata xsi:schemaLocation="http://www.isotc211.org/2005/gmd ../schemas/iso19139fra/gmd/gmd.xsd" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:map="urn:brgm:mapping" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:gfc="http://www.isotc211.org/2005/gfc" xmlns:gco="http://www.isotc211.org/2005/gco">
+	<geosoft xmlns="http://www.geosoft.com/schema/geo">
+		<dataset version="1">
+			<title>mars_mag_mercator-mars</title>
+			<file_format>Geosoft Database</file_format>
+			<project_name>g:\meu drive\compartilhamento\fabrizio-marte\marte_maio2025\fabmars_geoquimica.gpf</project_name>
+			<data_created_by>DESKTOP-LUIZEMA\Luizemara</data_created_by>
+			<data_creation_date>2025-06-24</data_creation_date>
+			<metadata_created_by>DESKTOP-LUIZEMA\Luizemara</metadata_created_by>
+			<metadata_creation_date>2025-06-24</metadata_creation_date>
+			<lineage>
+				<process name="savegdb.gx" displaystring="Create a new subset database" user="DESKTOP-LUIZEMA\Luizemara" version="Version 2023.2 (20231121.28)" date="2025-06-24" time="11:53:37">
+					<parameter name="SAVEGDB::COMPRESSION" value="0" type="string"/>
+					<parameter name="SAVEGDB::NAME" value="..\marte_junho2025\mars_mag_mercator-mars.gdb" type="string"/>
+					<parameter name="SAVEGDB::UNLOAD" value="" type="integer"/>
+					<source name="g:\meu drive\compartilhamento\fabrizio-marte\marte_junho2025\mars_mag_obtendo-coordenadas-metricas.gdb" type="DB"/>
+				</process>
+				<process name="dbsubset.gx" displaystring="Create a new subset database" user="DESKTOP-LUIZEMA\Luizemara" version="Version 2023.2 (20231121.28)" date="2025-06-24" time="11:53:50">
+					<parameter name="DBSUBSET::CHANNELS" value="All" type="string"/>
+					<parameter name="DBSUBSET::COMPRESSION" value="0" type="integer"/>
+					<parameter name="DBSUBSET::DIALOG" value="NO" type="string"/>
+					<parameter name="DBSUBSET::GDB" value="" type="string"/>
+					<parameter name="DBSUBSET::LINES" value="All" type="string"/>
+					<parameter name="DBSUBSET::MASK" value="" type="string"/>
+					<parameter name="DBSUBSET::MAXLINES" value="" type="integer"/>
+					<parameter name="DBSUBSET::NAME" value="..\marte_junho2025\mars_mag_mercator-mars.gdb" type="string"/>
+					<parameter name="DBSUBSET::SAVE_AS" value="1" type="integer"/>
+					<source name="g:\meu drive\compartilhamento\fabrizio-marte\marte_junho2025\mars_mag_obtendo-coordenadas-metricas.gdb" type="DB"/>
+				</process>
+			</lineage>
+			<georeference>
+				<projection type="UNKNOWN"/>
+			</georeference>
+		</dataset>
+	</geosoft>
+	<gmd:dataQualityInfo>
+		<gmd:DQ_DataQuality>
+			<gmd:lineage>
+				<gmd:LI_Lineage>
+					<gmd:processStep xlink:type="Geosoft Process" xlink:title="savegdb.gx">
+						<gmd:LI_ProcessStep>
+							<gmd:dateTime>
+								<gco:DateTime>2025-06-24T11:53:37</gco:DateTime>
+							</gmd:dateTime>
+							<gmd:processor>
+								<gmd:CI_ResponsibleParty>
+									<gmd:individualName>
+										<gco:CharacterString>DESKTOP-LUIZEMA\Luizemara</gco:CharacterString>
+									</gmd:individualName>
+								</gmd:CI_ResponsibleParty>
+							</gmd:processor>
+							<gmd:source xlink:type="Data Parameter" xlink:role="SAVEGDB::COMPRESSION" xlink:title="0">
+								<gmd:LI_Source/>
+							</gmd:source>
+							<gmd:source xlink:type="Data Parameter" xlink:role="SAVEGDB::NAME" xlink:title="..\marte_junho2025\mars_mag_mercator-mars.gdb">
+								<gmd:LI_Source/>
+							</gmd:source>
+							<gmd:source xlink:type="Data Parameter" xlink:role="SAVEGDB::UNLOAD" xlink:title="">
+								<gmd:LI_Source/>
+							</gmd:source>
+							<gmd:source xlink:type="Data Source" xlink:role="DB" xlink:title="g:\meu drive\compartilhamento\fabrizio-marte\marte_junho2025\mars_mag_obtendo-coordenadas-metricas.gdb">
+								<gmd:LI_Source/>
+							</gmd:source>
+						</gmd:LI_ProcessStep>
+					</gmd:processStep>
+					<gmd:processStep xlink:type="Geosoft Process" xlink:title="dbsubset.gx">
+						<gmd:LI_ProcessStep>
+							<gmd:dateTime>
+								<gco:DateTime>2025-06-24T11:53:50</gco:DateTime>
+							</gmd:dateTime>
+							<gmd:processor>
+								<gmd:CI_ResponsibleParty>
+									<gmd:individualName>
+										<gco:CharacterString>DESKTOP-LUIZEMA\Luizemara</gco:CharacterString>
+									</gmd:individualName>
+								</gmd:CI_ResponsibleParty>
+							</gmd:processor>
+							<gmd:source xlink:type="Data Parameter" xlink:role="DBSUBSET::CHANNELS" xlink:title="All">
+								<gmd:LI_Source/>
+							</gmd:source>
+							<gmd:source xlink:type="Data Parameter" xlink:role="DBSUBSET::COMPRESSION" xlink:title="0">
+								<gmd:LI_Source/>
+							</gmd:source>
+							<gmd:source xlink:type="Data Parameter" xlink:role="DBSUBSET::DIALOG" xlink:title="NO">
+								<gmd:LI_Source/>
+							</gmd:source>
+							<gmd:source xlink:type="Data Parameter" xlink:role="DBSUBSET::GDB" xlink:title="">
+								<gmd:LI_Source/>
+							</gmd:source>
+							<gmd:source xlink:type="Data Parameter" xlink:role="DBSUBSET::LINES" xlink:title="All">
+								<gmd:LI_Source/>
+							</gmd:source>
+							<gmd:source xlink:type="Data Parameter" xlink:role="DBSUBSET::MASK" xlink:title="">
+								<gmd:LI_Source/>
+							</gmd:source>
+							<gmd:source xlink:type="Data Parameter" xlink:role="DBSUBSET::MAXLINES" xlink:title="">
+								<gmd:LI_Source/>
+							</gmd:source>
+							<gmd:source xlink:type="Data Parameter" xlink:role="DBSUBSET::NAME" xlink:title="..\marte_junho2025\mars_mag_mercator-mars.gdb">
+								<gmd:LI_Source/>
+							</gmd:source>
+							<gmd:source xlink:type="Data Parameter" xlink:role="DBSUBSET::SAVE_AS" xlink:title="1">
+								<gmd:LI_Source/>
+							</gmd:source>
+							<gmd:source xlink:type="Data Source" xlink:role="DB" xlink:title="g:\meu drive\compartilhamento\fabrizio-marte\marte_junho2025\mars_mag_obtendo-coordenadas-metricas.gdb">
+								<gmd:LI_Source/>
+							</gmd:source>
+						</gmd:LI_ProcessStep>
+					</gmd:processStep>
+				</gmd:LI_Lineage>
+			</gmd:lineage>
+		</gmd:DQ_DataQuality>
+	</gmd:dataQualityInfo>
+	<gmd:identificationInfo>
+		<gmd:MD_DataIdentification>
+			<gmd:citation>
+				<gmd:CI_Citation>
+					<gmd:title>
+						<gco:CharacterString>mars_mag_mercator-mars</gco:CharacterString>
+					</gmd:title>
+					<gmd:collectiveTitle>
+						<gco:CharacterString>g:\meu drive\compartilhamento\fabrizio-marte\marte_maio2025\fabmars_geoquimica.gpf</gco:CharacterString>
+					</gmd:collectiveTitle>
+					<gmd:date>
+						<gmd:CI_Date>
+							<gmd:date>
+								<gco:Date>2025-6-24</gco:Date>
+							</gmd:date>
+						</gmd:CI_Date>
+					</gmd:date>
+				</gmd:CI_Citation>
+			</gmd:citation>
+			<gmd:resourceFormat>
+				<gmd:MD_Format>
+					<gmd:name>
+						<gco:CharacterString>Geosoft Database</gco:CharacterString>
+					</gmd:name>
+				</gmd:MD_Format>
+			</gmd:resourceFormat>
+			<gmd:pointOfContact>
+				<gmd:CI_ResponsibleParty>
+					<gmd:individualName>
+						<gco:CharacterString>DESKTOP-LUIZEMA\Luizemara</gco:CharacterString>
+					</gmd:individualName>
+				</gmd:CI_ResponsibleParty>
+			</gmd:pointOfContact>
+		</gmd:MD_DataIdentification>
+	</gmd:identificationInfo>
+	<gmd:contact>
+		<gmd:CI_ResponsibleParty>
+			<gmd:individualName>
+				<gco:CharacterString>DESKTOP-LUIZEMA\Luizemara</gco:CharacterString>
+			</gmd:individualName>
+		</gmd:CI_ResponsibleParty>
+	</gmd:contact>
+	<gmd:dateStamp>
+		<gco:Date>2025-6-24</gco:Date>
+	</gmd:dateStamp>
+	<gmd:referenceSystemInfo>
+		<gmd:MD_ReferenceSystem>
+			<gmd:referenceSystemIdentifier>
+				<gmd:RS_Identifier>
+					<gmd:codeSpace>
+						<gco:CharacterString>Geosoft</gco:CharacterString>
+					</gmd:codeSpace>
+					<gmd:code>
+						<gco:CharacterString>&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
+&amp;lt;projection type=&amp;quot;UNKNOWN&amp;quot; xmlns=&amp;quot;http://www.geosoft.com/schema/geo&amp;quot;/&amp;gt;
+</gco:CharacterString>
+					</gmd:code>
+					<gmd:version>
+						<gco:CharacterString>1</gco:CharacterString>
+					</gmd:version>
+				</gmd:RS_Identifier>
+			</gmd:referenceSystemIdentifier>
+		</gmd:MD_ReferenceSystem>
+	</gmd:referenceSystemInfo>
+</gmd:MD_Metadata>
